@@ -1,0 +1,19 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+}
+
+.summary-box {
+  border-left: 5px solid #dc3545;
+  background-color: #fff0f0;
+  border-radius: 8px;
+}
+
+aside ul li {
+  font-size: 1rem;
+}
+
+aside ul li:hover {
+  color: #dc3545;
+  cursor: pointer;
+}

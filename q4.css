@@ -1,0 +1,3 @@
+/* q4.css - minor typography tweaks */
+body { font-family: Georgia, 'Times New Roman', serif; }
+table.table { border-radius: 6px; overflow: hidden; }

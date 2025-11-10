@@ -1,0 +1,3 @@
+/* q8.css - highlight Pro plan */
+.featured { background: var(--bs-primary, #0d6efd); color: #fff; transform: translateY(-6px); transition: transform .25s; border-radius: .5rem; }
+.featured:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q5 - Movie Ticket Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .form-group {
+      margin-bottom: 12px;
+    }
+    label {
+      display: block;
+      margin-bottom: 4px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    .error {
+      color: red;
+      font-size: 0.9rem;
+    }
+    .ticket {
+      margin-top: 16px;
+      padding: 12px;
+      border: 1px solid #000;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Q5: Movie Ticket Booking</h1>
+
+  <form id="ticketForm" novalidate>
+    <div class="form-group">
+      <label for="movieName">Movie Name</label>
+      <input type="text" id="movieName" />
+    </div>
+
+    <div class="form-group">
+      <label for="userName">Name (alphabets only)</label>
+      <input type="text" id="userName" />
+      <span class="error" id="nameError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="userEmail">Email</label>
+      <input type="email" id="userEmail" />
+      <span class="error" id="emailError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="seats">Seats (1-10)</label>
+      <input type="number" id="seats" min="1" max="10" />
+      <span class="error" id="seatsError"></span>
+    </div>
+
+    <button type="submit">Book Ticket</button>
+  </form>
+
+  <div id="ticketOutput" class="ticket" style="display:none;"></div>
+
+  <script src="Q5_movie_booking.js"></script>
+</body>
+</html>

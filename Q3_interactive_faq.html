@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q3 - Interactive FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .faq-item { margin-bottom: 12px; padding: 8px; border-radius: 4px; border: 1px solid #ddd; }
+    .question { cursor: pointer; margin: 0; }
+    .answer { display: none; margin-top: 6px; }
+    .question-hover { color: #1976d2; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Q3: Interactive FAQ</h1>
+    <section id="faq">
+      <article class="faq-item">
+        <h3 class="question">What is your refund policy?</h3>
+        <div class="answer">We offer a 7-day refund policy.</div>
+      </article>
+      <article class="faq-item">
+        <h3 class="question">How do I contact support?</h3>
+        <div class="answer">You can email support@example.com.</div>
+      </article>
+      <article class="faq-item">
+        <h3 class="question">Can I change my plan later?</h3>
+        <div class="answer">Yes, you can upgrade or downgrade anytime.</div>
+      </article>
+      <article class="faq-item">
+        <h3 class="question">Is there a trial period?</h3>
+        <div class="answer">We offer a 14-day free trial.</div>
+      </article>
+      <article class="faq-item">
+        <h3 class="question">Share your feedback</h3>
+        <div class="answer">
+          <label>Feedback:
+            <input type="text" class="feedback-input" />
+          </label>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="Q3_interactive_faq.js"></script>
+</body>
+</html>

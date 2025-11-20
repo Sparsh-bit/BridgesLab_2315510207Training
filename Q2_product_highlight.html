@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .product-list { display: flex; flex-wrap: wrap; gap: 12px; }
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 180px;
+      border-radius: 4px;
+      position: relative;
+    }
+    .product.highlight { background-color: #e3f2fd; }
+    .favorite {
+      position: absolute;
+      top: 6px;
+      right: 8px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .favorite.selected { color: red; }
+    .details { display: none; margin-top: 6px; font-size: 0.9rem; color: #555; }
+    .discount { border-color: green; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Q2: Product Highlight</h1>
+    <section class="product-list">
+      <article class="product" data-name="Backpack" data-stock="5" data-discount="true">
+        <span class="favorite">★</span>
+        <h3>Backpack</h3>
+        <p>$49.99</p>
+        <div class="details">Durable and water-resistant backpack.</div>
+      </article>
+      <article class="product" data-name="Headphones" data-stock="0" data-discount="false">
+        <span class="favorite">★</span>
+        <h3>Headphones</h3>
+        <p>$89.99</p>
+        <div class="details">Noise-cancelling over-ear headphones.</div>
+      </article>
+      <article class="product" data-name="Laptop Stand" data-stock="3" data-discount="true">
+        <span class="favorite">★</span>
+        <h3>Laptop Stand</h3>
+        <p>$29.99</p>
+        <div class="details">Adjustable aluminum stand.</div>
+      </article>
+      <article class="product" data-name="Mouse" data-stock="10" data-discount="false">
+        <span class="favorite">★</span>
+        <h3>Wireless Mouse</h3>
+        <p>$19.99</p>
+        <div class="details">Ergonomic wireless mouse.</div>
+      </article>
+      <article class="product" data-name="Keyboard" data-stock="7" data-discount="true">
+        <span class="favorite">★</span>
+        <h3>Mechanical Keyboard</h3>
+        <p>$79.99</p>
+        <div class="details">RGB backlit mechanical keyboard.</div>
+      </article>
+    </section>
+  </main>
+
+  <script src="Q2_product_highlight.js"></script>
+</body>
+</html>

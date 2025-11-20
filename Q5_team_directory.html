@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q5 - Team Members Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .department { border: 1px solid #ccc; padding: 10px; margin-bottom: 12px; border-radius: 4px; }
+    .dept-title { cursor: pointer; margin: 0 0 6px 0; }
+    .manager { font-weight: bold; cursor: pointer; }
+    .employee { margin-left: 16px; cursor: pointer; }
+    .contact { display: none; font-size: 0.85rem; color: #555; margin-left: 8px; }
+    .highlight { background-color: #e3f2fd; }
+    .random-highlight { background-color: #ffe082; }
+    button { margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Q5: Team Members Directory</h1>
+    <section id="teams">
+      <div class="department" data-dept="Engineering">
+        <h2 class="dept-title">Engineering</h2>
+        <div class="manager">Alice (Manager)</div>
+        <div class="employee">E1 <span class="contact">e1@company.com</span></div>
+        <div class="employee">E2 <span class="contact">e2@company.com</span></div>
+      </div>
+
+      <div class="department" data-dept="Design">
+        <h2 class="dept-title">Design</h2>
+        <div class="manager">Bob (Manager)</div>
+        <div class="employee">D1 <span class="contact">d1@company.com</span></div>
+        <div class="employee">D2 <span class="contact">d2@company.com</span></div>
+      </div>
+
+      <div class="department" data-dept="Marketing">
+        <h2 class="dept-title">Marketing</h2>
+        <div class="manager">Carol (Manager)</div>
+        <div class="employee">M1 <span class="contact">m1@company.com</span></div>
+        <div class="employee">M2 <span class="contact">m2@company.com</span></div>
+      </div>
+    </section>
+
+    <button id="randomHighlightBtn">Highlight Random Employee & Siblings</button>
+    <button id="toggleTeamsBtn">Collapse/Expand All Teams</button>
+  </main>
+
+  <script src="Q5_team_directory.js"></script>
+</body>
+</html>

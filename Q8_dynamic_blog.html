@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q8 - Dynamic Blog Posts</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .post { border: 1px solid #ccc; padding: 8px; margin-bottom: 8px; border-radius: 4px; }
+    .tag { font-size: 0.8rem; color: #555; }
+    .keyword-highlight { background-color: #fff9c4; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Q8: Dynamic Blog Posts</h1>
+    <button id="addPostBtn">Add New Post</button>
+    <button id="prependPostBtn">Prepend Featured Post</button>
+    <button id="removeLastPostBtn">Remove Last Post</button>
+    <button id="highlightKeywordBtn">Highlight Posts with 'JavaScript'</button>
+
+    <section id="posts">
+      <article class="post">Learning JavaScript for beginners.</article>
+      <article class="post">CSS Grid vs Flexbox: layout tips.</article>
+      <article class="post">Writing clean HTML5 markup.</article>
+      <article class="post">Backend with Node.js overview.</article>
+      <article class="post">Debugging front-end performance issues.</article>
+    </section>
+  </main>
+
+  <script src="Q8_dynamic_blog.js"></script>
+</body>
+</html>

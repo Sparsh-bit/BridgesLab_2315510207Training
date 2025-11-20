@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q4 - Special Offer Banner</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .banner { padding: 10px; margin-bottom: 8px; border-radius: 4px; color: white; display: none; }
+    .banner:nth-child(1) { background-color: #2196f3; }
+    .banner:nth-child(2) { background-color: #4caf50; }
+    .banner:nth-child(3) { background-color: #ff9800; }
+    .banner:nth-child(4) { background-color: #9c27b0; }
+    .banner:nth-child(5) { background-color: #f44336; }
+    button { margin-right: 6px; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Q4: Special Offer Banner</h1>
+    <section id="banners">
+      <div class="banner">50% off on all items!</div>
+      <div class="banner">Free shipping over $100.</div>
+      <div class="banner">Buy 1 Get 1 Free on select products.</div>
+      <div class="banner">Weekend Flash Sale!</div>
+      <div class="banner">New arrivals just launched.</div>
+    </section>
+
+    <section>
+      <button id="showBtn">Show Banners</button>
+      <button id="hideBtn">Hide Banners</button>
+      <button id="slideToggleBtn">Slide Up/Down</button>
+      <button id="fadeToggleBtn">Fade In/Out</button>
+    </section>
+  </main>
+
+  <script src="Q4_special_offer_banner.js"></script>
+</body>
+</html>

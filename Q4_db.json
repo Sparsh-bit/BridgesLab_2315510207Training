@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "User 1"
+    },
+    {
+      "id": 2,
+      "name": "User 2"
+    },
+    {
+      "id": 3,
+      "name": "User 3"
+    },
+    {
+      "id": 4,
+      "name": "User 4"
+    },
+    {
+      "id": 5,
+      "name": "User 5"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 2,
+      "total": 110
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "total": 120
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "total": 130
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "total": 140
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "total": 150
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 50
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": 150
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "price": 200
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "price": 250
+    }
+  ]
+}

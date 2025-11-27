@@ -1,0 +1,133 @@
+/* --------------- GLOBAL STYLING --------------- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* --------------- TITLE --------------- */
+.app-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+/* --------------- BUTTONS --------------- */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    font-size: 15px;
+}
+
+.btn:hover {
+    transform: scale(1.07);
+}
+
+/* Button colors */
+.primary { background: #00d4ff; color: #000; }
+.success { background: #00ff9d; color: #000; }
+.danger  { background: #ff4d4d; color: #fff; }
+
+/* --------------- SEARCH & DROPDOWN --------------- */
+.search, .dropdown {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    width: 180px;
+}
+
+.control-panel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+/* --------------- TABLE (GLASS EFFECT) --------------- */
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+th {
+    padding: 15px;
+    background: rgba(255,255,255,0.3);
+    font-size: 18px;
+}
+
+/* Table Rows */
+td {
+    text-align: center;
+    padding: 12px;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+/* --------------- POPUP FORM --------------- */
+.popup {
+    background: white;
+    color: black;
+    width: 380px;
+    padding: 25px;
+    position: fixed;
+    top: 20%;
+    left: 38%;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.popup-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+/* --------------- LOADING INDICATOR --------------- */
+.loading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
